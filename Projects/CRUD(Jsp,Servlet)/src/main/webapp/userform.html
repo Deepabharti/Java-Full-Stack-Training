@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<style>
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 30px 45px;
+  text-align: center;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+table{
+background:mistyrose;
+padding:20px;
+height:300px;
+width:500px;
+font-family:cursive;
+
+}
+div{
+height:300px;
+width:200px;
+padding:20px;
+margin-right:250px;
+}
+
+
+</style>
+<body>
+<center><a href="viewusers.jsp">View All Records</a><br/>  </center>
+
+  <center>
+  <div>
+<h1 style="color:slateblue;" >Add New User</h1>  
+<form action="adduser.jsp" method="post" id="form1">  
+<table>  
+<tr><td>Name:</td><td>
+<input type="text" name="name" id="name" placeholder="enter your name" required /></td></tr>  
+<tr><td>Password:</td><td>  
+<input type="password" name="password" id="pass" placeholder="enter your password "  required/></td></tr>  
+<tr><td>Email:</td><td>
+<input type="email" name="email" id="email" placeholder="enter your email" required /></td></tr>  
+<tr><td>Sex:</td><td>  
+<input type="radio" name="sex" value="male"/  required>Male   
+<input type="radio" name="sex" value="female"/>Female </td></tr>  
+<tr><td>Country:</td><td>  
+<select name="country" style="width:155px" required>  
+<option>India</option>  
+<option>Pakistan</option>  
+<option>Afghanistan</option>  
+<option>Berma</option>  
+<option>Other</option>  
+</select>  
+</td></tr>  
+<tr><td colspan="2"><input  type="submit" value="Add User"  /></td></tr> 
+ 
+</table>  
+
+</div>
+</center>
+
+</form> 
+
+
+
+
+</body>
+</html>
